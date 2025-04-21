@@ -3,7 +3,7 @@ Learning by Doing : C++
 
 ---
 
-## 🗓️ Weekly Goals
+## Weekly Goals
 
 ###  Week 1: Mastering Modern C++ & Clean Code
 - [ ] Use smart pointers (`unique_ptr`, `shared_ptr`) in small projects
@@ -49,7 +49,6 @@ cpp-month/
 
 ## Useful Resources
 - **Books**: Effective Modern C++, C++ Coding Standards, Clean Code
-- **Practice**: [leetcode.com](https://leetcode.com), [codeforces.com](https://codeforces.com), [exercism.org](https://exercism.org/tracks/cpp)
 - **Open Source Ideas**: [Awesome C++ Projects](https://github.com/fffaraz/awesome-cpp)
 - **Testing Libraries**: Catch2, Google Test
 

@@ -1,5 +1,18 @@
 # Compilation
 
+## Table of Contents
+1. [The first compile](#the-first-compile)
+   - [Some flags](#some-flags)
+   - [Adding another file](#adding-another-file)
+2. [Digging deeper](#digging-deeper)
+   - [-E](#-e)
+   - [Consequence](#consequence)
+3. [Static and Dynamic libraries](#static-and-dynamic-libraries)
+   - [Creating a static library](#creating-a-static-library)
+   - [Using static lib](#using-static-lib)
+   - [Create shared lib](#create-shared-lib)
+   - [Usage of shared lib](#usage-of-shared-lib)
+
 ## The first compile
 
 ### Some flags

@@ -3,58 +3,246 @@ Learning by Doing : C++
 
 ---
 
-## Weekly Goals
-
-###  Week 1: Mastering Modern C++ & Clean Code
-- [ ] Use smart pointers (`unique_ptr`, `shared_ptr`) in small projects
-- [ ] Apply RAII and scope guards
-- [ ] Follow best practices from CPP Coding Standards 101
-- [ ] Project: Minimal `Vector` implementation
-- [ ] Bonus: CSV parser using `fstream` + STL
-
-###  Week 2: STL & Template Programming
-- [ ] Solve 10 problems using STL (e.g., `map`, `set`, `priority_queue`)
-- [ ] Create a generic Matrix class using templates
-- [ ] Implement basic type traits or SFINAE example
-- [ ] Project: Type-safe variant class or policy-based set
-
-###  Week 3: Concurrency + Memory + Internals
-- [ ] Create a multithreaded logger or downloader
-- [ ] Use `std::thread`, `mutex`, and `condition_variable`
-- [ ] Profile and debug with Valgrind or perf tools
-- [ ] Study cache locality and memory alignment
-- [ ] Project: Producer-consumer system with bounded buffer
-
-###  Week 4: Codebases, Testing, and Contributions
-- [ ] Pick an open-source C++ project to explore
-- [ ] Fix a bug or improve performance/code quality
-- [ ] Write unit tests with Catch2 or Google Test
-- [ ] Refactor your earlier projects based on new insights
-
----
-
-## Folder Structure
-```
-cpp-month/
-├── week1_core_clean/
-├── week2_stl_templates/
-├── week3_concurrency_memory/
-├── week4_contributions/
-├── notes/
-│   └── cpp_standards.md
-└── README.md
-```
-
----
-
-## Useful Resources
-- **Books**: Effective Modern C++, C++ Coding Standards, Clean Code
-- **Open Source Ideas**: [Awesome C++ Projects](https://github.com/fffaraz/awesome-cpp)
-- **Testing Libraries**: Catch2, Google Test
-
----
-
-## Tips
-- Write a daily log of what you did/learned.
-- Push code every day to GitHub with meaningful commits.
-- Always profile + refactor — that’s how you grow.
+- Background
+    - [ ]  Input and Output
+    - [ ]  Strings
+    - [ ]  string_view
+    - [ ]  std::format
+    - [ ]  UTF-8 basics
+    - [ ]  Parsing techniques
+    - [ ]  File handling with RAII
+    - Core Concepts
+        - [ ]  Const correctness
+        - [ ]  Value semantics
+        - [ ]  Initialization lists
+        - [ ]  Pass-by-value vs reference
+        - [ ]  Error handling
+        - [ ]  Exceptions basics
+    - Idioms
+        - [ ]  Named Constructor
+        - [ ]  Named Parameter
+        - [ ]  Safe bool
+        - [ ]  nullptr
+        - [ ]  Interface Class
+        - [ ]  Non-member Non-friend Function
+        - [ ]  Resource Return
+- Compilation
+    - [x]  Translation units
+    - [x]  ODR (One Definition Rule)
+    - [x]  Header/source separation
+    - [ ]  Include guards vs pragma once
+    - [ ]  CMake basics
+    - [ ]  CMake targets
+    - [ ]  Interface libraries
+    - [ ]  Static libraries
+    - [ ]  Dynamic libraries
+    - [x]  Linker errors and debugging
+    - [ ]  ABI basics
+    - [ ]  Build small multi-target project
+- STL + Containers + Algorithms
+    - [ ]  vector
+    - [ ]  deque
+    - [ ]  list
+    - [ ]  map
+    - [ ]  unordered_map
+    - [ ]  set
+    - [ ]  Iterators
+    - [ ]  STL algorithms
+    - [ ]  Iterator invalidation
+    - [ ]  Complexity analysis
+    - [ ]  Cache locality
+    - [ ]  Implement vector
+    - [ ]  Implement iterator for vector
+    - [ ]  Implement hash map
+    - Idioms
+        - [ ]  Iterator Pair
+        - [ ]  Erase-Remove
+        - [ ]  Copy-and-swap
+        - [ ]  Clear-and-minimize
+        - [ ]  Shrink-to-fit
+        - [ ]  Generic Container Idioms
+        - [ ]  Non-throwing swap
+        - [ ]  Temporary Proxy
+        - [ ]  Copy-on-write
+        - [ ]  Thread-safe Copy-on-write
+        - [ ]  Small Object Optimization
+- RAII + Move Semantics + Smart Pointers
+    - [ ]  RAII
+    - [ ]  Ownership models
+    - [ ]  Move semantics
+    - [ ]  lvalues and rvalues
+    - [ ]  Perfect forwarding basics
+    - [ ]  Copy elision
+    - [ ]  unique_ptr implementation
+    - [ ]  shared_ptr implementation
+    - [ ]  weak_ptr implementation
+    - [ ]  scope_guard implementation
+    - [ ]  Thread-safe queue
+    - Idioms
+        - [ ]  Rule of 3/5/0
+        - [ ]  Resource Acquisition Is Initialization (RAII)
+        - [ ]  Scope Guard
+        - [ ]  Smart Pointer
+        - [ ]  Execute-Around Pointer
+        - [ ]  Intrusive reference counting (Counted Body)
+        - [ ]  Non-copyable Mixin
+        - [ ]  Checked delete
+        - [ ]  Move Constructor
+        - [ ]  Attach by Initialization
+        - [ ]  Base-from-Member
+        - [ ]  Requiring or Prohibiting Heap-based Objects
+- Runtime Polymorphism + Design
+    - [ ]  Virtual dispatch
+    - [ ]  Composition vs inheritance
+    - [ ]  Interfaces
+    - [ ]  Dynamic polymorphism
+    - [ ]  std::variant
+    - [ ]  visitation
+    - [ ]  Plugin architecture
+    - [ ]  Event system
+    - [ ]  Command system
+    - Idioms
+        - [ ]  Non-Virtual Interface (NVI)
+        - [ ]  Virtual Constructor
+        - [ ]  Virtual Friend Function
+        - [ ]  Covariant Return Types
+        - [ ]  Type Erasure
+        - [ ]  Polymorphic Value Types
+        - [ ]  Polymorphic Exception
+        - [ ]  Acyclic Visitor Pattern
+        - [ ]  Attorney-Client
+        - [ ]  Capability Query
+        - [ ]  Calling Virtuals During Initialization
+        - [ ]  Final Class
+- Templates
+    - [ ]  Variadic templates
+    - [ ]  Fold expressions
+    - [ ]  constexpr
+    - [ ]  Concepts
+    - [ ]  SFINAE
+    - [ ]  CRTP
+    - [ ]  Type traits
+    - [ ]  Perfect forwarding
+    - [ ]  Compile-time programming
+    - [ ]  Generic logger
+    - [ ]  Serialization framework
+    - [ ]  ECS sparse set
+    - Idioms
+        - [ ]  Curiously Recurring Template Pattern (CRTP)
+        - [ ]  Substitution Failure Is Not An Error (SFINAE)
+        - [ ]  enable_if
+        - [ ]  Traits
+        - [ ]  Tag Dispatching
+        - [ ]  Expression-template
+        - [ ]  Metafunction
+        - [ ]  Int-To-Type
+        - [ ]  Type Selection
+        - [ ]  Type Generator
+        - [ ]  Policy Clone
+        - [ ]  Policy-based Design
+        - [ ]  Barton-Nackman trick
+        - [ ]  Empty Base Optimization (EBO)
+        - [ ]  Coercion by Member Template
+        - [ ]  Parameterized Base Class
+        - [ ]  Member Detector
+        - [ ]  Return Type Resolver
+        - [ ]  Function Object
+        - [ ]  Type Safe Enum
+        - [ ]  Algebraic Hierarchy
+        - [ ]  Hierarchy Generation
+        - [ ]  Recursive Type Composition
+        - [ ]  Named Template Parameters
+        - [ ]  The result_of technique
+- Ranges
+    - [ ]  views
+    - [ ]  lazy evaluation
+    - [ ]  projections
+    - [ ]  pipelines
+    - [ ]  sentinels
+    - [ ]  custom view implementation
+    - [ ]  lazy filter implementation
+    - Idioms
+        - [ ]  Pipe composition
+        - [ ]  Functional-style transformations
+        - [ ]  Projection idiom
+        - [ ]  Temporary Base Class
+- Allocators + Memory Resources
+    - [ ]  PMR resources
+    - [ ]  allocator model
+    - [ ]  monotonic allocator
+    - [ ]  pool allocator
+    - [ ]  arena allocator
+    - [ ]  linear allocator implementation
+    - [ ]  stack allocator
+    - [ ]  allocator-aware vector
+    - [ ]  ECS memory pool
+    - Concepts
+        - [ ]  Fragmentation
+        - [ ]  Alignment
+        - [ ]  Cache-aware allocation
+        - [ ]  False sharing
+        - [ ]  NUMA basics
+    - Idioms
+        - [ ]  Free Function Allocators
+        - [ ]  Object Generator
+        - [ ]  Computational Constructor
+        - [ ]  Concrete Data Type
+- Concurrency + Atomicity
+    - [ ]  mutexes
+    - [ ]  condition variables
+    - [ ]  atomics
+    - [ ]  futures and promises
+    - [ ]  acquire and release semantics
+    - [ ]  lock-free basics
+    - [ ]  thread pool implementation
+    - [ ]  lock-free queue
+    - [ ]  concurrent hash map
+    - Concepts
+        - [ ]  ABA problem
+        - [ ]  False sharing
+        - [ ]  Cache coherence
+        - [ ]  Memory ordering
+        - [ ]  Wait-free vs lock-free
+    - Idioms
+        - [ ]  Scoped Locking
+        - [ ]  Thread-Safe Interface
+        - [ ]  Double buffering
+        - [ ]  Producer-consumer
+        - [ ]  Active object pattern
+- Advanced / Misc
+    - [ ]  Coroutines
+    - [ ]  Modules
+    - [ ]  Networking
+    - [ ]  Reflection proposals
+    - [ ]  constexpr allocation
+    - [ ]  SIMD basics
+    - [ ]  Benchmarking
+    - [ ]  Profiling
+    - Idioms
+        - [ ]  Type Erasure deep dive
+        - [ ]  Fast Pimpl deep dive
+        - [ ]  Expression templates deep dive
+        - [ ]  Small Buffer Optimization
+        - [ ]  Fake Vtable
+        - [ ]  Function Poisoning
+        - [ ]  Export Guard Macro
+        - [ ]  Deprecate and Delete
+- Idioms
+    - [ ]  Include Guard Macro
+    - [ ]  Inline Guard Macro
+    - [ ]  Pimpl (Handle Body, Compilation Firewall)
+    - [ ]  Fast Pimpl
+    - [ ]  Thin Template
+    - [ ]  Runtime Static Initialization Order Idiom
+    - [ ]  Construct On First Use
+    - [ ]  Nifty Counter (Schwarz Counter)
+- Projects
+    - [ ]  CLI text processor
+    - [ ]  JSON parser
+    - [ ]  Smart pointer library
+    - [ ]  ECS framework
+    - [ ]  HTTP server
+    - [ ]  Thread pool
+    - [ ]  Plugin system
+    - [ ]  Game engine subsystem
+    - [ ]  Trading-style message bus

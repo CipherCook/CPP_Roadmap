@@ -40,7 +40,7 @@ Learning by Doing : C++
     - [ ]  ABI basics
     - [ ]  Build small multi-target project
 - STL + Containers + Algorithms
-    - [ ]  vector
+    - [x]  vector
     - [ ]  deque
     - [ ]  list
     - [ ]  map
